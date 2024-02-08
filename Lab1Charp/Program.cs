@@ -44,7 +44,7 @@
             int firstnumber = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter second number");
             int secondnumber = int.Parse(Console.ReadLine());
-            Task5(firstnumber, secondnumber);
+            Console.WriteLine(Task5(firstnumber, secondnumber));
             break;
         case 6:
             Console.WriteLine("Enter x : ");
@@ -90,11 +90,8 @@ static string Task4(int n, int m)
     return current.ToString("MMMM");
 }
 
-static void Task5(int num1, int num2)
-{
-    Console.WriteLine(SquareOfProduct(num1, num2));
-    
-}
+static int Task5(int num1, int num2)=> (num1 * num2) * (num1 * num2);// лямбда-вираз.
+
 
 
 
@@ -109,7 +106,6 @@ static double Task6(double x, double y)
     return ((x * Math.Pow(y, 2) + Math.Pow(x, 2)) / (x * y + 1)) * (x - y);
 }
 
-static int SquareOfProduct(int num1, int num2) => (num1 * num2) * (num1 * num2);// лямбда-вираз. 
 
 static bool IsTwoDigitNumberForTask2(int num)
 {
