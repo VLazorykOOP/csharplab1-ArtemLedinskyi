@@ -93,8 +93,8 @@ static string Task4(int n, int m)
 static void Task5(int num1, int num2)
 {
     Console.WriteLine(SquareOfProduct(num1, num2));
-    // Func<int,int,int>SquareOfProduct = (firstnum,secondnum)=>(firstnum*secondnum)* (firstnum * secondnum);
-}//Це реалізація за допомогою делегату який приймає два цілих числа та повертає квадрат добутку двох чисел, які вказані у параметрі.
+    
+}
 
 
 
